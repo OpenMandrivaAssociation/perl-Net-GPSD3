@@ -1,9 +1,9 @@
 %define upstream_name    Net-GPSD3
-%define upstream_version 0.11
+%define upstream_version 0.17
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Net::GPSD3 Return Satellite Object
 License:    GPL+ or Artistic
@@ -52,5 +52,12 @@ rm -rf %buildroot
 %doc README Changes LICENSE META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
+%{_bindir}/perl-Net-GPSD3-Example.pl
+%{_bindir}/perl-Net-GPSD3-Handler.pl
+%{_bindir}/perl-Net-GPSD3-poll.pl
+%{_mandir}/man1/perl-Net-GPSD3-Example.pl.1*
+%{_mandir}/man1/perl-Net-GPSD3-Handler.pl.1*
+%{_mandir}/man1/perl-Net-GPSD3-poll.pl.1*
+
 
 
