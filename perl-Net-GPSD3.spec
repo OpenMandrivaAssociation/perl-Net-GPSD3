@@ -12,13 +12,11 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(DateTime)
+BuildRequires: perl(DateTime::Format::W3CDTF)
 BuildRequires: perl(GPS::Point)
 BuildRequires: perl(IO::Socket::INET6)
 BuildRequires: perl(JSON::XS)
 BuildRequires: perl(Test::Simple)
-BuildRequires: perl(base)
-BuildRequires: perl(strict)
-BuildRequires: perl(warnings)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
