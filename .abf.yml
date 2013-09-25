@@ -1,2 +1,4 @@
+removed_sources:
+  Net-GPSD3-0.17.tar.gz: e94ac2a8ff2ede1f4e78e3cec84b2ca4fce89ef8
 sources:
-  "Net-GPSD3-0.17.tar.gz": e94ac2a8ff2ede1f4e78e3cec84b2ca4fce89ef8
+  Net-GPSD3-0.19.tar.gz: 1355defee3004834b49564e1f3456e9c095030cb

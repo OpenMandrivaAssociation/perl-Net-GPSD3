@@ -1,15 +1,15 @@
 %define upstream_name    Net-GPSD3
-%define upstream_version 0.17
+%define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Net::GPSD3 Return Satellite Object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-GPSD3-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DateTime)
@@ -44,12 +44,12 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc README Changes LICENSE META.yml
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-%{_bindir}/perl-Net-GPSD3-Example.pl
-%{_bindir}/perl-Net-GPSD3-Handler.pl
-%{_bindir}/perl-Net-GPSD3-poll.pl
-%{_mandir}/man1/perl-Net-GPSD3-Example.pl.1*
-%{_mandir}/man1/perl-Net-GPSD3-Handler.pl.1*
-%{_mandir}/man1/perl-Net-GPSD3-poll.pl.1*
+# %{_bindir}/perl-Net-GPSD3-Example.pl
+# %{_bindir}/perl-Net-GPSD3-Handler.pl
+# %{_bindir}/perl-Net-GPSD3-poll.pl
+# %{_mandir}/man1/perl-Net-GPSD3-Example.pl.1*
+# %{_mandir}/man1/perl-Net-GPSD3-Handler.pl.1*
+# %{_mandir}/man1/perl-Net-GPSD3-poll.pl.1*
 
 %changelog
 * Mon Jul 18 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.170.0-1mdv2011
@@ -63,4 +63,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sun Oct 31 2010 Olivier Thauvin <nanardon@mandriva.org> 0.110.0-1mdv2011.0
 + Revision: 590778
 - import perl-Net-GPSD3
+
 
