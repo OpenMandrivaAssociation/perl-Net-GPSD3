@@ -8,7 +8,7 @@ Release:	3
 Summary:	Net::GPSD3 Return Satellite Object
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/Net-GPSD3-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
