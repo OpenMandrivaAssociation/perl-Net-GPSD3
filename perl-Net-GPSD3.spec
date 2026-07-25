@@ -2,14 +2,14 @@
 %define upstream_version 0.19
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Net::GPSD3 Return Satellite Object
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/Net-GPSD3-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Net-GPSD3
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRDVT/Net-GPSD3-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
