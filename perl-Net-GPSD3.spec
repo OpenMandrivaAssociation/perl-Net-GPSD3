@@ -1,15 +1,13 @@
 %define upstream_name    Net-GPSD3
-%define upstream_version 0.19
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.19
+Release:	5
 
 Summary:	Net::GPSD3 Return Satellite Object
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-GPSD3
-Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRDVT/Net-GPSD3-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRDVT/Net-GPSD3-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ adding to the daemon in version 2.90. If your daemon is before 2.90 then
 please use the the Net::GPSD manpage package.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
